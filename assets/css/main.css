@@ -3241,12 +3241,12 @@ body.landing #page-wrapper {
   z-index: 0;
 }
 
-/* Banner */
+/* Banner Image (Philadelphia)*/
 
 #banner {
   background-attachment: scroll, fixed;
   background-color: #666;
-  background-image: url("images/overlay.png"), url("../../images/philly.jpg");
+  background-image: url("images/overlay.png"), url("../../images/ben_franklin.jpg");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
