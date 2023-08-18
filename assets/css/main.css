@@ -3246,7 +3246,7 @@ body.landing #page-wrapper {
 #banner {
   background-attachment: scroll, fixed;
   background-color: rgb(141, 129, 129);
-  background-image: url("images/overlay.png"), url("../../images/ben_franklin.jpg");
+  background-image: url("images/overlay.png"), url("../../images/philly_green.jpg");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
