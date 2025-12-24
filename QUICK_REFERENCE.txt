@@ -1,0 +1,77 @@
+═══════════════════════════════════════════════════════════════════
+            🎮 EASTER EGGS QUICK REFERENCE CARD 🎮
+═══════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    HOW TO TRIGGER EACH EFFECT                   │
+└─────────────────────────────────────────────────────────────────┘
+
+1. 💥 PARTICLE BURST
+   Action: Click anywhere on the page
+   Effect: Colorful particles explode from cursor
+   
+2. 🌈 RAINBOW MODE
+   Action: Double-click on your name/banner
+   Effect: All sections glow with rainbow colors + fireworks
+   
+3. ⚡ RAPID FIRE RAINBOW
+   Action: Click 10 times quickly (within 2 seconds)
+   Effect: Automatic rainbow mode activation
+   
+4. 🎪 SECTION ANIMATIONS
+   Action: Click on any project box
+   Effect: Box shakes, flips, or bounces
+   
+5. 🎮 KONAMI CODE
+   Action: Type ↑ ↑ ↓ ↓ ← → ← → B A
+   Effect: Matrix rain falls down screen
+   
+6. 🔐 SECRET MESSAGE
+   Action: Hold 'S' key for 3 seconds
+   Effect: Secret unlocked message appears
+   
+7. 🔗 LINK HOVER
+   Action: Hover over any project link
+   Effect: Link scales up and rotates
+   
+8. 🖥️ CONSOLE SURPRISE
+   Action: Open Developer Console (F12)
+   Effect: See styled easter egg list
+
+┌─────────────────────────────────────────────────────────────────┐
+│                      WHAT WAS FIXED                             │
+└─────────────────────────────────────────────────────────────────┘
+
+✅ Name/banner pushed down (no longer hidden)
+✅ Images sized correctly (no more stretching)
+✅ Interactive particle background added
+✅ Glassmorphism design (modern blurred glass effect)
+✅ Smooth hover animations everywhere
+
+┌─────────────────────────────────────────────────────────────────┐
+│                      FILES ADDED                                │
+└─────────────────────────────────────────────────────────────────┘
+
+📁 /assets/js/canvas-effects.js ........ Particle system
+📁 /assets/js/easter-eggs.js ........... Easter egg effects  
+📁 /assets/css/canvas-effects.css ...... Styling & animations
+📁 EASTER_EGGS_DOCUMENTATION.txt ....... Full documentation
+📁 QUICK_REFERENCE.txt ................. This file!
+
+┌─────────────────────────────────────────────────────────────────┐
+│                  CUSTOMIZATION QUICK TIPS                       │
+└─────────────────────────────────────────────────────────────────┘
+
+Change particle count:
+  → canvas-effects.js, line 13: particleCount: 100
+
+Change colors:
+  → canvas-effects.js, lines 14-22 (particle colors)
+  → easter-eggs.js, lines 11-18 (rainbow colors)
+
+Change animations:
+  → canvas-effects.css (all @keyframes sections)
+
+═══════════════════════════════════════════════════════════════════
+                    Have fun with the easter eggs! 🎉
+═══════════════════════════════════════════════════════════════════
