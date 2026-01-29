@@ -2,162 +2,163 @@
 <html>
 
 <head>
-	<title>Nicholas A Brancifort</title>
-	<link rel="shortcut icon" type="image/jpg" href='./favicon.ico' />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/canvas-effects.css" />
+    <title>Nicholas A Brancifort</title>
+    <link rel="shortcut icon" type="image/jpg" href='./favicon.ico' />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/canvas-effects.css" />
 
+    <!-- Optional: quick inline style to ensure canvas background behavior -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0e23; /* fallback dark color matching the script */
+            overflow-x: hidden;
+        }
+        #cosmic-canvas {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;           /* behind everything */
+            pointer-events: none;   /* allows clicking through to content if desired */
+        }
+        #page-wrapper {
+            position: relative;
+            z-index: 1;             /* content above canvas */
+        }
+        #banner {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 
 <body class="landing is-preload">
-	<!-- Particle Canvas Background -->
-	<canvas id="particle-canvas"></canvas>
-	
-	<div id="page-wrapper">
-		<section id="banner">
-			<h2>Nicholas A Brancifort</h2>
-			<p>Full Stack Web Developer && Hospitality Professional</p>
-		</section>
-		<!-- Main -->
-		<section id="main" class="container">
-			<section class="box special">
-				<header class="major">
-					<h2>About Me
-					</h2>
-					<p>
 
-					I was born and raised in New Jersey and grew up inspired by my parents’ careers in hospitality. Early on, I gained customer service experience at Wendy’s, where I developed communication skills and a strong work ethic. My career advanced at The Rittenhouse Hotel, where I served in dining, coordination, and supervisory roles, contributing to two consecutive 5 Diamond Awards.
+    <!-- Cosmic animated background (waves + stars + constellations + lightning) -->
+    <canvas id="cosmic-canvas"></canvas>
+    
+    <div id="page-wrapper">
 
-Alongside hospitality, I explored software and music engineering, eventually starting my own business during college. These ventures strengthened my creativity, discipline, and problem-solving skills.
+        <section id="banner">
+            <h2>Nicholas A Brancifort</h2>
+            <p>Full Stack Web Developer && Hospitality Professional</p>
+        </section>
 
-Today, I am eager to continue growing in Hospitality Management and Tourism, motivated by my parents’ example and a passion for delivering exceptional service. Outside of work, I enjoy traveling, meeting new people, and spending time with friends, which helps me maintain a healthy work-life balance.
+        <!-- Main -->
+        <section id="main" class="container">
+            <section class="box special">
+                <header class="major">
+                    <h2>About Me</h2>
+                    <p>
+                        I was born and raised in New Jersey and grew up inspired by my parents’ careers in hospitality. Early on, I gained customer service experience at Wendy’s, where I developed communication skills and a strong work ethic. My career advanced at The Rittenhouse Hotel, where I served in dining, coordination, and supervisory roles, contributing to two consecutive 5 Diamond Awards.
 
-					</p>
-				</header>
+                        Alongside hospitality, I explored software and music engineering, eventually starting my own business during college. These ventures strengthened my creativity, discipline, and problem-solving skills.
 
-				<h2 class='projects'>Projects</h2>
-				<section class="box special features">
-				
-				<div class='features-row'>
-						
-					</div>
-				<section>
+                        Today, I am eager to continue growing in Hospitality Management and Tourism, motivated by my parents’ example and a passion for delivering exceptional service. Outside of work, I enjoy traveling, meeting new people, and spending time with friends, which helps me maintain a healthy work-life balance.
+                    </p>
+                </header>
 
-							<a href='https://find-trails.com'>Find Trails</a>
-							<h3>A Trail Discovery Platform</h3>
-							<p>Originally developed as a full-stack group project called Good Trails using Pug and Express, this application was reimagined as a solo project and rebuilt with Python and React. Find Trails enables users to discover hiking trails by state, track trails they've visited or plan to visit, and organize them into personal collections. The platform features a comprehensive rating system and detailed trail descriptions, allowing users to select hikes based on skill level and desired destination. Users can also share their experiences by writing and reading trail reviews.
-							</p>
-						</section>
-						<section>
+                <h2 class='projects'>Projects</h2>
+                <section class="box special features">
+                
+                    <div class='features-row'></div>
 
-							<a href="https://medleystorage.com/">Medley Storage</a>
-							<h3>A Music Streaming Community</h3>
-							<p>A solo full-stack project built with Flask, React, and Redux, featuring AWS S3 integration for secure song and image storage. Users can upload their favorite artists along with audio files and profile images, create and edit artist biographies, and explore content shared by the community. Unlike previous projects, Medley Storage allows users to stream music directly on the platform, providing a seamless listening experience without external redirects.
-							</p>
-						</section>
-						<section>
-							<a href='https://locatesteaks.com'>LocateSteaks</a>  
-							
-							<h3>A Cheesesteak Rating Platform</h3>
-							<p>Built with React, Redux, Flask, PostgreSQL, and Docker, LocateSteaks is a community-driven platform for discovering and rating cheesesteak establishments. The application features a voting system that allows users to rate their favorite spots and share recommendations. While core functionality is live and deployed on Heroku, future enhancements will include interactive maps integration for location-based searches and improved address visualization.
-							</p>					
-			
-						</section>
-						<section>
-							<a href='https://songs-aa.herokuapp.com/'>Songs Smarter</a>
-							<h3>A Music Sharing Community</h3>
-							<p>My first full-stack solo project, Songs Smarter is a community platform where musicians can upload their original music, share it with other users, and receive feedback through comments. This project served as a foundation for exploring full-stack development concepts. Future enhancements include implementing a marketplace feature that will allow users to buy and sell melody stems, creating opportunities for collaboration and monetization within the creative community.
-							</p>
-						</section>
-						
-						<section>
-							<a href='https://robin-hood-clone-74aef86e2cd5.herokuapp.com/'>Robinhood Clone</a>
-							<h3>A Trading Platform Clone</h3>
-							<p>A full-stack web application that replicates the core functionality of Robinhood, allowing users to trade stocks, manage portfolios, and track market performance in real-time. Built with React, Redux, Flask, and PostgreSQL, this application features user authentication, watchlists, portfolio management, and live stock data integration. Please note that due to API rate limiting on the free tier, some stock data may be cached or limited to ensure optimal performance and availability for all users.
-							</p>
-						</section>
-						
-						<section>
-							<a href='https://in-room-dining.com/'>In Room Dining</a>
-							<h3>An Employee Onboarding Platform</h3>
-							<p>A specialized web application designed to streamline employee onboarding in the hospitality industry. The platform provides structured access to menu data, shift protocols, workflow documentation, and duty requirements. Built with a front-end-focused architecture and a Flask backend for secure authentication, the application simplifies training and operational efficiency. Please note that due to corporate guidelines, the site is currently unavailable, but a new version will be released in the near future.
-							</p>
-						</section>
-					</div>
-				</section>
-				
-			
+                    <section>
+                        <a href='https://find-trails.com'>Find Trails</a>
+                        <h3>A Trail Discovery Platform</h3>
+                        <p>Originally developed as a full-stack group project called Good Trails using Pug and Express, this application was reimagined as a solo project and rebuilt with Python and React. Find Trails enables users to discover hiking trails by state, track trails they've visited or plan to visit, and organize them into personal collections. The platform features a comprehensive rating system and detailed trail descriptions, allowing users to select hikes based on skill level and desired destination. Users can also share their experiences by writing and reading trail reviews.</p>
+                    </section>
 
-				<div class="row">
-					<div class="col-6 col-12-narrower">
-						<section class="box special">
-							<span class="image featured"><img src="images/rubberDucks.jpg" alt="Languages and Libraries" /></span>
-							<h3>Languages and Libraries</h3>
-							<p> JavaScript | Python | React | Docker | Flux | Node | Express | SQL | SQLAlchemy |
-								MySQL | PostgreSQL | Jinja2 | AJAX | Redux | HTML & HTML5 | CSS & CSS3 | Pug | Linux |
-								Alpine Linux |
-								Ruby on Rails | AWS | Mocha | ES5 & ES6 | jQuery
-							</p>
-						</section>
-					</div>
-					<div class="col-6 col-12-narrower">
-						<section class="box special">
-							<span class="image featured"><img src="images/forHire.jpg" alt="Resume" /></span>
-							<h3>Resume</h3>
-							<p><a
-									href='https://docs.google.com/document/d/14LgaPDgC3hyTzoPiOpuWaH9XQ4j-54wVJJQsTvknoYE/edit?usp=sharing'>View
-									here</a>
-							</p>
-						</section>
-					</div>
-				</div>
-			</section>
-			<!-- Footer -->
-			<!--github and linkedin images(svgs from font awesome)-->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/brancifortnick/" class="icon brands fa-github"><span
-								class="label"></span></a></li>
-					<li><a href="https://www.linkedin.com/in/brancifortnick" class="icon brands fa-linkedin">
-						</a> <span class="label"></span>
-					</li>
-				</ul>
+                    <section>
+                        <a href="https://medleystorage.com/">Medley Storage</a>
+                        <h3>A Music Streaming Community</h3>
+                        <p>A solo full-stack project built with Flask, React, and Redux, featuring AWS S3 integration for secure song and image storage. Users can upload their favorite artists along with audio files and profile images, create and edit artist biographies, and explore content shared by the community. Unlike previous projects, Medley Storage allows users to stream music directly on the platform, providing a seamless listening experience without external redirects.</p>
+                    </section>
 
-				<ul class="copyright">
-					<li>&copy; Nicholas Brancifort 2024. All rights reserved.</li>
-				</ul>
-			</footer>
+                    <section>
+                        <a href='https://locatesteaks.com'>LocateSteaks</a>  
+                        <h3>A Cheesesteak Rating Platform</h3>
+                        <p>Built with React, Redux, Flask, PostgreSQL, and Docker, LocateSteaks is a community-driven platform for discovering and rating cheesesteak establishments. The application features a voting system that allows users to rate their favorite spots and share recommendations. While core functionality is live and deployed on Heroku, future enhancements will include interactive maps integration for location-based searches and improved address visualization.</p>					
+                    </section>
 
-	</div>
+                    <section>
+                        <a href='https://songs-aa.herokuapp.com/'>Songs Smarter</a>
+                        <h3>A Music Sharing Community</h3>
+                        <p>My first full-stack solo project, Songs Smarter is a community platform where musicians can upload their original music, share it with other users, and receive feedback through comments. This project served as a foundation for exploring full-stack development concepts. Future enhancements include implementing a marketplace feature that will allow users to buy and sell melody stems, creating opportunities for collaboration and monetization within the creative community.</p>
+                    </section>
+                    
+                    <section>
+                        <a href='https://robin-hood-clone-74aef86e2cd5.herokuapp.com/'>Robinhood Clone</a>
+                        <h3>A Trading Platform Clone</h3>
+                        <p>A full-stack web application that replicates the core functionality of Robinhood, allowing users to trade stocks, manage portfolios, and track market performance in real-time. Built with React, Redux, Flask, and PostgreSQL, this application features user authentication, watchlists, portfolio management, and live stock data integration. Please note that due to API rate limiting on the free tier, some stock data may be cached or limited to ensure optimal performance and availability for all users.</p>
+                    </section>
+                    
+                    <section>
+                        <a href='https://in-room-dining.com/'>In Room Dining</a>
+                        <h3>An Employee Onboarding Platform</h3>
+                        <p>A specialized web application designed to streamline employee onboarding in the hospitality industry. The platform provides structured access to menu data, shift protocols, workflow documentation, and duty requirements. Built with a front-end-focused architecture and a Flask backend for secure authentication, the application simplifies training and operational efficiency. Please note that due to corporate guidelines, the site is currently unavailable, but a new version will be released in the near future.</p>
+                    </section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/wave-constellation.js"></script>
-	<script src="assets/js/easter-eggs.js"></script>
+                </section>
+
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section class="box special">
+                            <span class="image featured"><img src="images/rubberDucks.jpg" alt="Languages and Libraries" /></span>
+                            <h3>Languages and Libraries</h3>
+                            <p> JavaScript | Python | React | Docker | Flux | Node | Express | SQL | SQLAlchemy |
+                                MySQL | PostgreSQL | Jinja2 | AJAX | Redux | HTML & HTML5 | CSS & CSS3 | Pug | Linux |
+                                Alpine Linux |
+                                Ruby on Rails | AWS | Mocha | ES5 & ES6 | jQuery
+                            </p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+                        <section class="box special">
+                            <span class="image featured"><img src="images/forHire.jpg" alt="Resume" /></span>
+                            <h3>Resume</h3>
+                            <p><a href='https://docs.google.com/document/d/14LgaPDgC3hyTzoPiOpuWaH9XQ4j-54wVJJQsTvknoYE/edit?usp=sharing'>View here</a></p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://github.com/brancifortnick/" class="icon brands fa-github"><span class="label"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/brancifortnick" class="icon brands fa-linkedin"><span class="label"></span></a></li>
+                </ul>
+
+                <ul class="copyright">
+                    <li>&copy; Nicholas Brancifort 2024. All rights reserved.</li>
+                </ul>
+            </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.min.js">
+</script>
+<script src="assets/js/cosmic-three-background.js"></script>
+<script src="assets/js/newDesign.js"></script>
+<script src="assets/js/wave-constellation.js"></script>
+<script src='assets/js/wave-constellation.js'></script>
+    <!-- Keep your other custom scripts -->
+    <script src="assets/js/easter-eggs.js"></script>
+    <script src="assets/js/custom-cursor.js"></script>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -25,7 +25,7 @@
             count: 250,
             size: { min: 1, max: 3.5 },
             twinkleSpeed: 0.02,
-            shootingStarChance: 0.0005
+            shootingStarChance: 0.003 // Increased for more frequent shooting stars
         },
         // Constellation settings
         constellation: {
@@ -481,8 +481,8 @@
         }
 
         updateShootingStars() {
-            // Create new shooting stars randomly
-            if (Math.random() < config.stars.shootingStarChance && this.shootingStars.length < 3) {
+            // Create new shooting stars randomly - increased limit
+            if (Math.random() < config.stars.shootingStarChance && this.shootingStars.length < 8) {
                 this.shootingStars.push(new ShootingStar(this.canvas));
             }
 
